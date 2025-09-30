@@ -1,0 +1,81 @@
+body {
+    font-family: 'Helvetica';
+}
+
+header {
+    background-color: #647FBC;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-nav {
+    color: white;
+    padding: 1rem;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.link-nav:hover, .link-nav:focus {
+    background-color: #AED6CF;
+}
+
+.link-contact {
+    color: black;
+}
+
+p, li {
+    text-wrap: balance;
+}
+
+button {
+    display: block;
+}
+
+@media (min-width: 36.66em) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #main-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #visualizations-div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #about {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
